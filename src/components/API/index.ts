@@ -25,7 +25,7 @@ const provinces = () => {
   provincesCities.forEach(async (city) => {
     try {
       const resp = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=044797d37dbd4c9193b132152202805&q=${city}&lang=eng&condition:icon`,
+        `https://api.weatherapi.com/v1/current.json?key=044797d37dbd4c9193b132152202805&q=${city}&lang=eng&condition:icon`,
       );
       const respBody: Weather = await resp.json();
       readyCities.push(respBody);
