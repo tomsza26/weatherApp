@@ -31,7 +31,7 @@ const index = () => {
 
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${weatherAPIKey}&q=${latV},${lngV}&lang=eng&condition:icon`,
+        `https://api.weatherapi.com/v1/current.json?key=${weatherAPIKey}&q=${latV},${lngV}&lang=eng&condition:icon`,
       );
 
       if (!response.ok) {
@@ -73,7 +73,7 @@ const index = () => {
       .replace(/ł/gi, 'l');
     if (inputVal) {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${weatherAPIKey}&q=${inputVal}&lang=eng&condition:icon`,
+        `https://api.weatherapi.com/v1/current.json?key=${weatherAPIKey}&q=${inputVal}&lang=eng&condition:icon`,
       );
 
       if (response.status === 400) {
