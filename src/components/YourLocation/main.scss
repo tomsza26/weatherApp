@@ -1,0 +1,74 @@
+@use '../../styles/config';
+@use '../../styles/functions';
+
+.weather {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  max-width: 500px;
+
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  .badLocation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 30px;
+      margin: 0 0 5px 0;
+    }
+
+    form {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+
+      input {
+        width: 50%;
+        padding: 5px;
+        font-size: 20px;
+      }
+
+      button:focus,
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        padding: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        color: config.$color1;
+        background: config.$color2;
+        border: 3px solid config.$color1;
+        box-sizing: border-box;
+        transition: 0.6s;
+      }
+
+      button:hover {
+        outline: none;
+        background: config.$color1;
+        color: config.$color2;
+      }
+    }
+
+    #errorMessage {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #bd0000;
+      @include functions.stroke(1, #000);
+    }
+  }
+}

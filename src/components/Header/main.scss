@@ -1,0 +1,11 @@
+@use '../../styles/config';
+@use '../../styles/functions';
+
+header {
+  font-size: 6vw;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: config.$color1;
+  @include functions.stroke(2, #000);
+  text-align: center;
+}

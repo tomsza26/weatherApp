@@ -1,0 +1,35 @@
+#provinceCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  svg {
+    height: 580px;
+    width: 630px;
+
+    g {
+      cursor: pointer;
+
+      path:hover {
+        opacity: 0.85;
+      }
+
+      path {
+        transition: all 150ms;
+      }
+
+      text {
+        font-size: 20px;
+      }
+    }
+
+    g:hover > path {
+      opacity: 0.85;
+    }
+  }
+}
