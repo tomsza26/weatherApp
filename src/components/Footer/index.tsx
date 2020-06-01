@@ -9,7 +9,7 @@ const index = () => {
         Designed and maked by
         <br />
         <a
-          href="https:/tomasz-szablewski.pl"
+          href="https://www.tomasz-szablewski.pl/"
           target="_blank"
           rel="noopener noreferrer"
         >
