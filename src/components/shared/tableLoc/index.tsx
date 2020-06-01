@@ -20,7 +20,7 @@ const index = (props: PropTypes) => {
           <div className="divG">{address || weather.location.name}</div>
           <div className="divG">{weather.current.condition.text}</div>
           <div className="divG" id="iconImg">
-            <img src={weather.current.condition.icon} alt="" />
+            <img src={`https:${weather.current.condition.icon}`} alt="" />
           </div>
           <div className="divG">Temperature: </div>
           <div className="divG">{weather.current.temp_c}&#176;C</div>

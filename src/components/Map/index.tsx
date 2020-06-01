@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Province from '../API/index';
 import ProvinceSvg from './mapSvg';
 import TableLoc from '../shared/tableLoc/index';
-import { Prov, Weather } from '../shared/ts/Types';
+import { Weather } from '../shared/ts/Types';
 import AuthContext from '../shared/context/activePlace';
 import './main.scss';
 

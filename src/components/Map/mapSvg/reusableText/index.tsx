@@ -29,7 +29,7 @@ const index = (props: PropTypes) => {
             : '#6495ed'
         }
       />
-      <image href={obj.icon} transform={`translate(${x} ${y})`} />
+      <image href={`https:${obj.icon}`} transform={`translate(${x} ${y})`} />
       <text fill="black" transform={`translate(${x + 20} ${y + 74})`}>
         {obj.temp}&#176;C
       </text>
