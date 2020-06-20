@@ -6,7 +6,7 @@ import './main.scss';
 import { Errored, Weather } from '../shared/ts/Types';
 import TableTemplate from '../shared/tableLoc/index';
 
-const googleAPIKey = 'AIzaSyC7Xr0UOgmTeV2mzgUyLEO-dDlpLe8KHGA';
+const googleAPIKey = 'AIzaSyDdPWFORh-EPfn1-KV76TzDi2anDpm1ALU';
 const weatherAPIKey = '044797d37dbd4c9193b132152202805';
 
 const index = () => {
